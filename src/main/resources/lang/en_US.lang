@@ -1,0 +1,31 @@
+infosigns.command.base.description=InfoSigns Version 
+infosigns.config.fail=There was a problem loading the InfoSign config
+infosigns.hook.econ=Unable to hook into an economy! Make sure you have one available that Vault accepts.
+
+infosigns.commands.base.help.commands=Commands:
+infosigns.commands.base.help.description=Displays this screen.
+infosigns.commands.base.nocommand=No command specified: ${command}
+infosigns.commands.base.nocommandblock=${command} cannot be called from a command block.
+infosigns.commands.base.noconsole=${command} cannot be called from the console.
+infosigns.commands.base.nopermission=You do not have permission to use ${command}
+infosigns.commands.base.unknowncommand=Unknown command: ${command}
+infosigns.commands.base.usage=Usage: ${usage}
+infosigns.commands.base.validcommands=Valid commands are:
+infosigns.commands.base.error=An internal error occurred while executing that command.
+infosigns.commands.reload.description=Reloads the configuration
+infosigns.commands.reload.reload-complete=Configuration Reloaded
+infosigns.commands.reload.reload-error=There is a problem with the config. Please check any changes you made
+infosigns.commands.select.description=Selects the block you're looking at to be selection point 1 or 2
+infosigns.commands.select.unknown-point=Unknown point ${point}. Should be '1' or '2'
+infosigns.commands.select.too-far=No block within 10 units of your eye line.
+infosigns.commands.select.done=Point ${point} set to ${coords}
+infosigns.commands.select.point1-unset=Point 1 is not set. Use '/infosigns select 1' to set the point
+infosigns.commands.select.point2-unset=Point 2 is not set. Use '/infosigns select 2' to set the point
+infosigns.commands.select.no-select=You have nothing selected
+infosigns.commands.select.select-type=Only cuboid selection can be used for leaderboards
+infosigns.commands.whitelistarea.description=Adds or removes an area to the grinding whitelist.
+infosigns.commands.whitelistarea.done=Area is now whitelisted
+infosigns.commands.whitelistarea.remove.done=Area is no longer whitelisted
+infosigns.commands.whitelistarea.iswhitelisted=Area is whitelisted
+infosigns.commands.whitelistarea.notwhitelisted=Area is not whitelisted
+

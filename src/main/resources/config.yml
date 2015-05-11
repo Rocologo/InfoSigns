@@ -1,0 +1,54 @@
+# IF YOU ARE UPGRADING FROM OPS THERE IS AN OPTION TO USE THE SAME SIGNS.YML FILE
+# Uncomment the line below to allow the running of the /amsupgradefromops command
+#UPGRADINGFROMOPS: true
+
+UseBypassNode: true
+formats:
+    world:
+    - '&aOnline in'
+    - '%world%'
+    - '%players%'
+    - ''
+    player:
+    - '&aThe player'
+    - '%player%'
+    - '&ais %onmsg=Logged in%%offmsg=&cLogged out%'
+    - ''
+    server:
+    - '&aTotal'
+    - '&aPlayers'
+    - '&c%totalplayers%&f/&c%maxplayers%'
+    - '%poweron=&aPOWER%'
+    region:
+    - '&aPlayers in'
+    - '&c%region%'
+    - '%players%'
+    - ''
+    powerexample:
+    - '&aPeople done'
+    - '&awith puzzle'
+    - '%poweroff=&c//1// of //2//%%poweron=&aEnough!%'
+    - '%poweron=&aEnter next room%'
+    lobby:
+    - '%poweroff=The game%'
+    - '%poweroff=starts when%%poweron=&aThe game has%'
+    - '%poweroff=there are &c//2//-//1//%%poweron=&abegun%'
+    - '%poweroff=more player(s)%'
+    #Note: //2//-//1// is not displayed like 4-2, it actually calculates it for you, meaning it would show as 2 (4-2=2)
+    #You can do the same with all basic calculations (+,-,*,/)
+    
+    
+#Variables available: %players%, %maxplayers%, %world%, %totalplayers%, %player%,
+#%onmsg=<msg>%, %offmsg=<msg>%, %poweron=<msg>%, %poweroff=<msg>%, //1//, //2//, //3// and so on..
+
+#%players% - in a server type sign it returns total amount of online players,
+#if you want this in any of the others use %totalplayers%
+#in a player specified sign %players% does not return anything, but gets filtered out.
+#in a world based sign %players% returns online players currently in that world
+#lastly, in a region specific sign %players% returns people in the region.
+#%maxplayers% works in every sign and returns the servers maximum amount of players.
+#%1% and %2% are the first and second values to compare (when the sign was made)
+#Example: SignLine4: "%player% >= 10" %1% = %player% %2% = 10
+#These variables are there for the plugin to be as configurable as possible.
+#I will soon add custom variables and sign linking for longer texts :D Look forward to version 2.1. (hopefully)
+#Also, I might release an API for this if enough devs are into it.

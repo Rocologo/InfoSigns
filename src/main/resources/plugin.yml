@@ -1,0 +1,29 @@
+name: InfoSigns
+main: tk.lindegaard.InfoSigns.InfoSigns
+version: ${version}
+description: InfoSigns: information about player on the server.
+author: Rocologo
+load: POSTWORLD
+depend: [Vault]
+softdepend: [Minigames, WorldEdit]
+
+commands:
+  infosigns:
+    description: Allows you to reload InfoSigns Plugin
+    permission: infosigns.reload
+    aliases: []
+    usage: /<command> reload
+
+permissions:
+  infosigns.create:
+    description: Allows a player to create infosigns command
+    default: op
+  inforsigns.reload:
+    description: Allows a player to reload the config
+    default: op
+    children:
+      inforsigns.create: true
+  inforsigns.use:
+    description: Allows a player to use infosigns
+    default: true
+
